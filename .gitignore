@@ -1,0 +1,17 @@
+# Local reference / working docs — not part of the public deliverable
+2304.03442v2.pdf
+CLAUDE.md
+PLAN.md
+
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets
+.env
+
+# Generated artifacts
+results/
+data/*.csv
