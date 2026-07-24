@@ -169,9 +169,13 @@ def parse_vote(text: str) -> tuple[str, str]:
     return vote, _extract_reason(text)
 
 
-def _vote_once(agent: Agent, call_fn: CallFn) -> Vote:
-    """Ask one agent to vote, retrying a single time on a parse failure."""
-    prompt = build_prompt(agent)
+def cast_vote(agent: Agent, prompt: str, call_fn: CallFn) -> Vote:
+    """Send ``prompt`` for one agent and parse the vote, retrying once on failure.
+
+    Shared by the base round (``build_prompt``) and the social round
+    (``social.build_social_prompt``) so the retry/parse/error handling lives in
+    one place.
+    """
     for attempt in range(2):
         response = call_fn(prompt)
         try:
@@ -199,7 +203,7 @@ def run_scenario(
     """
     votes: list[Vote] = []
     for agent in agents:
-        votes.append(_vote_once(agent, call_fn))
+        votes.append(cast_vote(agent, build_prompt(agent), call_fn))
         if pause_seconds:
             time.sleep(pause_seconds)
     if write:
