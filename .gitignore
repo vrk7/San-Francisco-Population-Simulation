@@ -14,4 +14,8 @@ __pycache__/
 
 # Generated artifacts
 results/
-data/*.csv
+
+# Large raw PUMS downloads (regenerate via scripts/build_sf_pums.py).
+# The slim data/sf_pums.csv IS committed so the repo runs without the ~360MB download.
+data/*.zip
+data/psam_*.csv
