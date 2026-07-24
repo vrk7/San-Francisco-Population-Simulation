@@ -256,8 +256,16 @@ def _render_breakdown(title: str, label: str, rows: list[BreakdownRow]) -> list[
     return lines
 
 
-def render_report(result: BenchmarkResult, votes: Sequence[Vote]) -> str:
-    """Render the required Part 2 + Part 3 output as Markdown."""
+def render_report(
+    result: BenchmarkResult,
+    votes: Sequence[Vote],
+    extra_sections: Sequence[str] | None = None,
+) -> str:
+    """Render the required Part 2 + Part 3 output as Markdown.
+
+    ``extra_sections`` (pre-rendered Markdown lines, e.g. the Phase-5 experiment
+    summaries) are inserted just before the full vote list.
+    """
     lines = [
         "# Proposition X — Simulation Report",
         "",
@@ -299,6 +307,8 @@ def render_report(result: BenchmarkResult, votes: Sequence[Vote]) -> str:
         "",
         *_render_breakdown("Yes % by income bracket", "Income", result.by_income),
     ]
+    if extra_sections:
+        lines += ["", *extra_sections]
     lines += ["", "## All votes", ""]
     for v in votes:
         lines.append(f"- **{v.agent_id}. {v.agent_name}** — _{v.vote}_: {v.reason}")
@@ -306,10 +316,13 @@ def render_report(result: BenchmarkResult, votes: Sequence[Vote]) -> str:
 
 
 def write_report(
-    result: BenchmarkResult, votes: Sequence[Vote], path: Path | None = None
+    result: BenchmarkResult,
+    votes: Sequence[Vote],
+    path: Path | None = None,
+    extra_sections: Sequence[str] | None = None,
 ) -> Path:
     """Write the report to results/report.md and return its path."""
     RESULTS_DIR.mkdir(exist_ok=True)
     target = path or (RESULTS_DIR / "report.md")
-    target.write_text(render_report(result, votes))
+    target.write_text(render_report(result, votes, extra_sections))
     return target

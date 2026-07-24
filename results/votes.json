@@ -1,0 +1,182 @@
+[
+  {
+    "agent_id": 1,
+    "agent_name": "James Martinez",
+    "vote": "Yes",
+    "reason": "I'm willing to pay a little more for delivery if it means helping out the local restaurants and workers who are struggling to make ends meet."
+  },
+  {
+    "agent_id": 2,
+    "agent_name": "Andre Cohen",
+    "vote": "Yes",
+    "reason": "I'm voting for a cap on food delivery app fees because I believe it's essential to protect the small businesses and workers that make Chinatown such a vibrant community, even if it means I might end up paying a bit more myself."
+  },
+  {
+    "agent_id": 3,
+    "agent_name": "Chen Hassan",
+    "vote": "Yes",
+    "reason": "I'm voting for a cap on delivery app fees 'cause it's about fairness to the local restaurants and workers who are already struggling to make ends meet, not just about me saving a few bucks."
+  },
+  {
+    "agent_id": 4,
+    "agent_name": "Fatima Chen",
+    "vote": "Yes",
+    "reason": "I'd rather see a cap on the delivery apps' fees to protect local restaurants and workers, even if it means I personally pay a bit more for my weekly dinner orders."
+  },
+  {
+    "agent_id": 5,
+    "agent_name": "Wei Chen",
+    "vote": "Yes",
+    "reason": "I'm willing to pay a little more for delivery if it means that local restaurants and their workers aren't getting taken advantage of by these apps."
+  },
+  {
+    "agent_id": 6,
+    "agent_name": "Rosa Lee",
+    "vote": "Yes",
+    "reason": "I'll vote to cap food delivery app fees because I care about the local restaurants and workers who've been struggling with unsustainable commissions, even if it means a slight increase in my own delivery costs."
+  },
+  {
+    "agent_id": 7,
+    "agent_name": "David Brown",
+    "vote": "Yes",
+    "reason": "I'm voting to cap food delivery app fees at 15% because I think it's only fair that the big apps don't take advantage of local restaurants and workers who are already struggling, and it'll help keep some small businesses afloat in my neighborhood."
+  },
+  {
+    "agent_id": 8,
+    "agent_name": "Tomas Rossi",
+    "vote": "Yes",
+    "reason": "I'd rather see my favorite neighborhood spots like the new Filipino restaurant down the street from me survive and thrive without getting squeezed by those huge delivery app fees, even if it means I might pay a bit more for my own food."
+  },
+  {
+    "agent_id": 9,
+    "agent_name": "Raj Cohen",
+    "vote": "Yes",
+    "reason": "I'm voting yes because I don't want to see the local cafe that closed down on my block due to the high fees from those apps to be replaced by another chain, and I think a 15% cap will help keep our neighborhood spots alive."
+  },
+  {
+    "agent_id": 10,
+    "agent_name": "Sofia Garcia",
+    "vote": "Yes",
+    "reason": "I'm voting for a cap on food delivery app fees because it's about fairness to the local restaurants and workers who are struggling to make ends meet, not just about my own convenience."
+  },
+  {
+    "agent_id": 11,
+    "agent_name": "Hana Silva",
+    "vote": "Yes",
+    "reason": "I'm voting to cap food delivery app fees at 15% because I think it's only fair that those apps don't take advantage of local restaurants and the workers who make their business run."
+  },
+  {
+    "agent_id": 12,
+    "agent_name": "Ahmed Patel",
+    "vote": "Yes",
+    "reason": "I'm voting yes on capping food delivery app fees at 15% because I think it's only fair to give local restaurants and workers a break, especially after hearing how much these apps are taking from them."
+  },
+  {
+    "agent_id": 13,
+    "agent_name": "David Silva",
+    "vote": "Yes",
+    "reason": "I'm voting to cap those delivery app fees at 15% because it'll help keep the neighborhood restaurants that I care about staying open and supporting their employees, who are good people who've become like family."
+  },
+  {
+    "agent_id": 14,
+    "agent_name": "Yuki Singh",
+    "vote": "Yes",
+    "reason": "I think a 15% cap is fair to both local restaurants and customers like me who value the convenience of delivery, so it's worth taking a stand to protect the small businesses that make our neighborhood special."
+  },
+  {
+    "agent_id": 15,
+    "agent_name": "James Brown",
+    "vote": "Yes",
+    "reason": "I'd rather see a cap on the delivery apps' commissions to protect local restaurants and workers from getting squeezed out by these big companies."
+  },
+  {
+    "agent_id": 16,
+    "agent_name": "Hana Silva",
+    "vote": "Yes",
+    "reason": "I'm willing to pay a bit more for delivery so that the small, local cafes and restaurants can keep their doors open and treat their workers fairly."
+  },
+  {
+    "agent_id": 17,
+    "agent_name": "Raj Chen",
+    "vote": "Yes",
+    "reason": "I'm voting yes 'cause I don't wanna see the local cafes and restaurants struggle no more, they're like family to me and I gotta support 'em."
+  },
+  {
+    "agent_id": 18,
+    "agent_name": "Chen Martinez",
+    "vote": "Yes",
+    "reason": "I'm willing to pay a bit more for delivery if it means that local restaurants and the workers who pour their hearts into them can keep making ends meet."
+  },
+  {
+    "agent_id": 19,
+    "agent_name": "Aisha Kim",
+    "vote": "No",
+    "reason": "I'm worried a cap on delivery app fees will just make them raise the prices they charge me as a customer, and with my household budget already stretched thin, that's not something I can afford."
+  },
+  {
+    "agent_id": 20,
+    "agent_name": "Ahmed Murphy",
+    "vote": "Yes",
+    "reason": "I'm voting to cap food delivery app fees at 15% because I think it's only fair that these big companies share the burden of supporting local restaurants and workers, who are struggling to make ends meet amidst rising costs."
+  },
+  {
+    "agent_id": 21,
+    "agent_name": "Aisha Wong",
+    "vote": "Yes",
+    "reason": "I've seen how those delivery apps hurt small businesses like the cafe that closed down on my block, and I'm willing to pay a little extra myself if it means keeping our local restaurants alive."
+  },
+  {
+    "agent_id": 22,
+    "agent_name": "Tomas Johnson",
+    "vote": "Yes",
+    "reason": "I'd rather see a cap on the delivery app fees to protect local restaurants and their workers from getting squeezed out by companies like DoorDash, even if it means I might pay a bit more for my own food deliveries."
+  },
+  {
+    "agent_id": 23,
+    "agent_name": "Elena Martinez",
+    "vote": "Yes",
+    "reason": "I'm voting yes because I care about the local cafe that just closed down and think a 15% cap on delivery fees will help small businesses like theirs stay afloat."
+  },
+  {
+    "agent_id": 24,
+    "agent_name": "Grace Martinez",
+    "vote": "Yes",
+    "reason": "I'd rather see a cap on the delivery apps' fees to help out my favorite neighborhood restaurants and their workers, even if it means paying a little more myself."
+  },
+  {
+    "agent_id": 25,
+    "agent_name": "Grace Johnson",
+    "vote": "Yes",
+    "reason": "I'd rather pay a bit more for my takeout if it means the local cafes and restaurants that make our neighborhood special can stay open and support their employees, who are already struggling with commission rates as high as 30%."
+  },
+  {
+    "agent_id": 26,
+    "agent_name": "Luis Wong",
+    "vote": "Yes",
+    "reason": "I've seen how hard it is for my friends who run small restaurants to make ends meet, and capping the delivery app fees at 15% will give them a fighting chance to stay in business."
+  },
+  {
+    "agent_id": 27,
+    "agent_name": "Nadia Garcia",
+    "vote": "Yes",
+    "reason": "I'd rather pay a little more per order to support my neighborhood spots that have been struggling and keep the people who work there employed."
+  },
+  {
+    "agent_id": 28,
+    "agent_name": "Fatima Johnson",
+    "vote": "Yes",
+    "reason": "I'm voting yes because a cap on delivery app fees will help out the local restaurants and workers who are already struggling to make ends meet, and it's not like they're gonna raise my fee that much anyway."
+  },
+  {
+    "agent_id": 29,
+    "agent_name": "Omar Cohen",
+    "vote": "Yes",
+    "reason": "I'm willing to pay a little extra for delivery if it means helping out the local cafe owner who's been struggling and giving them a fair shot against those big app companies."
+  },
+  {
+    "agent_id": 30,
+    "agent_name": "David Diaz",
+    "vote": "Yes",
+    "reason": "I'd rather pay a little more for delivery myself than see the fees eat into the already thin margins of our local restaurants and hurt the people who work hard to serve us good food every day."
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "name": "James Martinez",
+    "age": 26,
+    "neighborhood": "Potrero Hill",
+    "occupation": "Software & Tech Worker",
+    "income_bracket": "$150k+",
+    "sex": "male",
+    "education": "Bachelor's degree",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 5,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 5
+    },
+    "profile": "James Martinez is a 26-year-old software & tech worker in Potrero Hill, who owns their home with a household income of $150k+. They come across as open to new ideas and spontaneous and easygoing.",
+    "memories": []
+  },
+  {
+    "id": 2,
+    "name": "Andre Cohen",
+    "age": 32,
+    "neighborhood": "Chinatown",
+    "occupation": "Healthcare Practitioner",
+    "income_bracket": "$75k-$150k",
+    "sex": "male",
+    "education": "Graduate degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 5,
+      "extraversion": 6,
+      "agreeableness": 6,
+      "neuroticism": 6
+    },
+    "profile": "Andre Cohen is a 32-year-old healthcare practitioner in Chinatown, who rents with a household income of $75k-$150k. They come across as open to new ideas and spontaneous and easygoing.",
+    "memories": []
+  },
+  {
+    "id": 3,
+    "name": "Chen Hassan",
+    "age": 49,
+    "neighborhood": "Mission Bay",
+    "occupation": "Transportation & Delivery Worker",
+    "income_bracket": "<$30k",
+    "sex": "male",
+    "education": "High school graduate",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 5,
+      "conscientiousness": 6,
+      "extraversion": 6,
+      "agreeableness": 5,
+      "neuroticism": 6
+    },
+    "profile": "Chen Hassan is a 49-year-old transportation & delivery worker in Mission Bay, who rents with a household income of <$30k. They come across as practical and routine-minded and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 4,
+    "name": "Fatima Chen",
+    "age": 20,
+    "neighborhood": "Nob Hill",
+    "occupation": "Educator",
+    "income_bracket": "$150k+",
+    "sex": "female",
+    "education": "High school graduate",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 6,
+      "conscientiousness": 5,
+      "extraversion": 7,
+      "agreeableness": 6,
+      "neuroticism": 6
+    },
+    "profile": "Fatima Chen is a 20-year-old educator in Nob Hill, who rents with a household income of $150k+. They come across as outgoing and social and open to new ideas.",
+    "memories": []
+  },
+  {
+    "id": 5,
+    "name": "Wei Chen",
+    "age": 23,
+    "neighborhood": "Ingleside",
+    "occupation": "Personal Care Worker",
+    "income_bracket": "$150k+",
+    "sex": "female",
+    "education": "Bachelor's degree",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 6,
+      "extraversion": 7,
+      "agreeableness": 6,
+      "neuroticism": 6
+    },
+    "profile": "Wei Chen is a 23-year-old personal care worker in Ingleside, who owns their home with a household income of $150k+. They come across as open to new ideas and outgoing and social.",
+    "memories": []
+  },
+  {
+    "id": 6,
+    "name": "Rosa Lee",
+    "age": 71,
+    "neighborhood": "Pacific Heights",
+    "occupation": "Not currently employed",
+    "income_bracket": "$150k+",
+    "sex": "female",
+    "education": "Graduate degree",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 4,
+      "conscientiousness": 8,
+      "extraversion": 6,
+      "agreeableness": 6,
+      "neuroticism": 4
+    },
+    "profile": "Rosa Lee is a 71-year-old resident, not currently employed, in Pacific Heights, who owns their home with a household income of $150k+. They come across as organized and dependable and practical and routine-minded.",
+    "memories": []
+  },
+  {
+    "id": 7,
+    "name": "David Brown",
+    "age": 59,
+    "neighborhood": "Ingleside",
+    "occupation": "Transportation & Delivery Worker",
+    "income_bracket": "$150k+",
+    "sex": "male",
+    "education": "High school graduate",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 5,
+      "conscientiousness": 6,
+      "extraversion": 6,
+      "agreeableness": 5,
+      "neuroticism": 4
+    },
+    "profile": "David Brown is a 59-year-old transportation & delivery worker in Ingleside, who owns their home with a household income of $150k+. They come across as calm and even-keeled and practical and routine-minded.",
+    "memories": []
+  },
+  {
+    "id": 8,
+    "name": "Tomas Rossi",
+    "age": 24,
+    "neighborhood": "Inner Richmond",
+    "occupation": "Production Worker",
+    "income_bracket": "$75k-$150k",
+    "sex": "male",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 5,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 5
+    },
+    "profile": "Tomas Rossi is a 24-year-old production worker in Inner Richmond, who rents with a household income of $75k-$150k. They come across as open to new ideas and spontaneous and easygoing.",
+    "memories": []
+  },
+  {
+    "id": 9,
+    "name": "Raj Cohen",
+    "age": 33,
+    "neighborhood": "Pacific Heights",
+    "occupation": "Construction Worker",
+    "income_bracket": "$75k-$150k",
+    "sex": "male",
+    "education": "No high school diploma",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 6,
+      "conscientiousness": 6,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 6
+    },
+    "profile": "Raj Cohen is a 33-year-old construction worker in Pacific Heights, who owns their home with a household income of $75k-$150k. They come across as open to new ideas and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 10,
+    "name": "Sofia Garcia",
+    "age": 81,
+    "neighborhood": "Haight",
+    "occupation": "Not currently employed",
+    "income_bracket": "$30k-$75k",
+    "sex": "female",
+    "education": "Some college",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 3,
+      "conscientiousness": 8,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 5
+    },
+    "profile": "Sofia Garcia is an 81-year-old resident, not currently employed, in Haight, who owns their home with a household income of $30k-$75k. They come across as practical and routine-minded and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 11,
+    "name": "Hana Silva",
+    "age": 83,
+    "neighborhood": "Inner Richmond",
+    "occupation": "Not currently employed",
+    "income_bracket": "$75k-$150k",
+    "sex": "female",
+    "education": "Associate degree",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 3,
+      "conscientiousness": 8,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 4
+    },
+    "profile": "Hana Silva is an 83-year-old resident, not currently employed, in Inner Richmond, who owns their home with a household income of $75k-$150k. They come across as practical and routine-minded and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 12,
+    "name": "Ahmed Patel",
+    "age": 78,
+    "neighborhood": "Nob Hill",
+    "occupation": "Not currently employed",
+    "income_bracket": "$75k-$150k",
+    "sex": "male",
+    "education": "Some college",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 4,
+      "conscientiousness": 7,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 4
+    },
+    "profile": "Ahmed Patel is a 78-year-old resident, not currently employed, in Nob Hill, who rents with a household income of $75k-$150k. They come across as practical and routine-minded and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 13,
+    "name": "David Silva",
+    "age": 71,
+    "neighborhood": "Pacific Heights",
+    "occupation": "Not currently employed",
+    "income_bracket": "$75k-$150k",
+    "sex": "male",
+    "education": "High school graduate",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 4,
+      "conscientiousness": 8,
+      "extraversion": 6,
+      "agreeableness": 5,
+      "neuroticism": 5
+    },
+    "profile": "David Silva is a 71-year-old resident, not currently employed, in Pacific Heights, who owns their home with a household income of $75k-$150k. They come across as organized and dependable and practical and routine-minded.",
+    "memories": []
+  },
+  {
+    "id": 14,
+    "name": "Yuki Singh",
+    "age": 57,
+    "neighborhood": "Sunset",
+    "occupation": "Manager",
+    "income_bracket": "$150k+",
+    "sex": "female",
+    "education": "Bachelor's degree",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 6,
+      "conscientiousness": 7,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 5
+    },
+    "profile": "Yuki Singh is a 57-year-old manager in Sunset, who owns their home with a household income of $150k+. They come across as organized and dependable and open to new ideas.",
+    "memories": []
+  },
+  {
+    "id": 15,
+    "name": "James Brown",
+    "age": 30,
+    "neighborhood": "Parkside",
+    "occupation": "Scientist",
+    "income_bracket": "$150k+",
+    "sex": "male",
+    "education": "Graduate degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 6,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 5
+    },
+    "profile": "James Brown is a 30-year-old scientist in Parkside, who rents with a household income of $150k+. They come across as open to new ideas and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 16,
+    "name": "Hana Silva",
+    "age": 30,
+    "neighborhood": "Richmond",
+    "occupation": "Sales Worker",
+    "income_bracket": "$150k+",
+    "sex": "female",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 7,
+      "conscientiousness": 5,
+      "extraversion": 7,
+      "agreeableness": 6,
+      "neuroticism": 5
+    },
+    "profile": "Hana Silva is a 30-year-old sales worker in Richmond, who rents with a household income of $150k+. They come across as open to new ideas and outgoing and social.",
+    "memories": []
+  },
+  {
+    "id": 17,
+    "name": "Raj Chen",
+    "age": 40,
+    "neighborhood": "Haight",
+    "occupation": "Construction Worker",
+    "income_bracket": "<$30k",
+    "sex": "male",
+    "education": "No high school diploma",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 6,
+      "conscientiousness": 6,
+      "extraversion": 5,
+      "agreeableness": 5,
+      "neuroticism": 6
+    },
+    "profile": "Raj Chen is a 40-year-old construction worker in Haight, who rents with a household income of <$30k. They come across as open to new ideas and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 18,
+    "name": "Chen Martinez",
+    "age": 35,
+    "neighborhood": "Parkside",
+    "occupation": "Manager",
+    "income_bracket": "$150k+",
+    "sex": "male",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 6,
+      "extraversion": 5,
+      "agreeableness": 5,
+      "neuroticism": 5
+    },
+    "profile": "Chen Martinez is a 35-year-old manager in Parkside, who rents with a household income of $150k+. They come across as open to new ideas and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 19,
+    "name": "Aisha Kim",
+    "age": 43,
+    "neighborhood": "North Beach",
+    "occupation": "Office & Admin Worker",
+    "income_bracket": "<$30k",
+    "sex": "female",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 5,
+      "conscientiousness": 6,
+      "extraversion": 6,
+      "agreeableness": 6,
+      "neuroticism": 6
+    },
+    "profile": "Aisha Kim is a 43-year-old office & admin worker in North Beach, who rents with a household income of <$30k. They come across as practical and routine-minded and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 20,
+    "name": "Ahmed Murphy",
+    "age": 40,
+    "neighborhood": "Castro",
+    "occupation": "Manager",
+    "income_bracket": "$150k+",
+    "sex": "male",
+    "education": "Graduate degree",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 6,
+      "conscientiousness": 6,
+      "extraversion": 5,
+      "agreeableness": 5,
+      "neuroticism": 4
+    },
+    "profile": "Ahmed Murphy is a 40-year-old manager in Castro, who owns their home with a household income of $150k+. They come across as calm and even-keeled and open to new ideas.",
+    "memories": []
+  },
+  {
+    "id": 21,
+    "name": "Aisha Wong",
+    "age": 77,
+    "neighborhood": "Hunters Point",
+    "occupation": "Arts & Media Worker",
+    "income_bracket": "<$30k",
+    "sex": "female",
+    "education": "Associate degree",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 3,
+      "conscientiousness": 7,
+      "extraversion": 7,
+      "agreeableness": 5,
+      "neuroticism": 5
+    },
+    "profile": "Aisha Wong is a 77-year-old arts & media worker in Hunters Point, who owns their home with a household income of <$30k. They come across as practical and routine-minded and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 22,
+    "name": "Tomas Johnson",
+    "age": 32,
+    "neighborhood": "Outer Mission",
+    "occupation": "Software & Tech Worker",
+    "income_bracket": "$150k+",
+    "sex": "male",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 7,
+      "conscientiousness": 5,
+      "extraversion": 6,
+      "agreeableness": 6,
+      "neuroticism": 5
+    },
+    "profile": "Tomas Johnson is a 32-year-old software & tech worker in Outer Mission, who rents with a household income of $150k+. They come across as open to new ideas and spontaneous and easygoing.",
+    "memories": []
+  },
+  {
+    "id": 23,
+    "name": "Elena Martinez",
+    "age": 43,
+    "neighborhood": "Ingleside",
+    "occupation": "Not currently employed",
+    "income_bracket": "$150k+",
+    "sex": "female",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 7,
+      "conscientiousness": 7,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 5
+    },
+    "profile": "Elena Martinez is a 43-year-old resident, not currently employed, in Ingleside, who rents with a household income of $150k+. They come across as open to new ideas and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 24,
+    "name": "Grace Martinez",
+    "age": 27,
+    "neighborhood": "Mission Bay",
+    "occupation": "Sales Worker",
+    "income_bracket": "$150k+",
+    "sex": "female",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 5,
+      "extraversion": 6,
+      "agreeableness": 6,
+      "neuroticism": 6
+    },
+    "profile": "Grace Martinez is a 27-year-old sales worker in Mission Bay, who rents with a household income of $150k+. They come across as open to new ideas and spontaneous and easygoing.",
+    "memories": []
+  },
+  {
+    "id": 25,
+    "name": "Grace Johnson",
+    "age": 28,
+    "neighborhood": "Mission Bay",
+    "occupation": "Healthcare Practitioner",
+    "income_bracket": "$75k-$150k",
+    "sex": "female",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 5,
+      "extraversion": 5,
+      "agreeableness": 7,
+      "neuroticism": 6
+    },
+    "profile": "Grace Johnson is a 28-year-old healthcare practitioner in Mission Bay, who rents with a household income of $75k-$150k. They come across as open to new ideas and warm and cooperative.",
+    "memories": []
+  },
+  {
+    "id": 26,
+    "name": "Luis Wong",
+    "age": 71,
+    "neighborhood": "Outer Mission",
+    "occupation": "Not currently employed",
+    "income_bracket": "<$30k",
+    "sex": "male",
+    "education": "Bachelor's degree",
+    "tenure": "owner",
+    "ocean": {
+      "openness": 5,
+      "conscientiousness": 8,
+      "extraversion": 6,
+      "agreeableness": 5,
+      "neuroticism": 5
+    },
+    "profile": "Luis Wong is a 71-year-old resident, not currently employed, in Outer Mission, who owns their home with a household income of <$30k. They come across as organized and dependable and practical and routine-minded.",
+    "memories": []
+  },
+  {
+    "id": 27,
+    "name": "Nadia Garcia",
+    "age": 30,
+    "neighborhood": "Richmond",
+    "occupation": "Manager",
+    "income_bracket": "$150k+",
+    "sex": "female",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 6,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 6
+    },
+    "profile": "Nadia Garcia is a 30-year-old manager in Richmond, who rents with a household income of $150k+. They come across as open to new ideas and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 28,
+    "name": "Fatima Johnson",
+    "age": 55,
+    "neighborhood": "Tenderloin",
+    "occupation": "Transportation & Delivery Worker",
+    "income_bracket": "$30k-$75k",
+    "sex": "female",
+    "education": "No high school diploma",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 4,
+      "conscientiousness": 7,
+      "extraversion": 5,
+      "agreeableness": 6,
+      "neuroticism": 6
+    },
+    "profile": "Fatima Johnson is a 55-year-old transportation & delivery worker in Tenderloin, who rents with a household income of $30k-$75k. They come across as practical and routine-minded and organized and dependable.",
+    "memories": []
+  },
+  {
+    "id": 29,
+    "name": "Omar Cohen",
+    "age": 23,
+    "neighborhood": "Noe Valley",
+    "occupation": "Protective Service Worker",
+    "income_bracket": "$150k+",
+    "sex": "male",
+    "education": "High school graduate",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 6,
+      "conscientiousness": 5,
+      "extraversion": 6,
+      "agreeableness": 6,
+      "neuroticism": 5
+    },
+    "profile": "Omar Cohen is a 23-year-old protective service worker in Noe Valley, who rents with a household income of $150k+. They come across as open to new ideas and spontaneous and easygoing.",
+    "memories": []
+  },
+  {
+    "id": 30,
+    "name": "David Diaz",
+    "age": 32,
+    "neighborhood": "Outer Mission",
+    "occupation": "Manager",
+    "income_bracket": "$150k+",
+    "sex": "male",
+    "education": "Bachelor's degree",
+    "tenure": "renter",
+    "ocean": {
+      "openness": 8,
+      "conscientiousness": 5,
+      "extraversion": 6,
+      "agreeableness": 5,
+      "neuroticism": 5
+    },
+    "profile": "David Diaz is a 32-year-old manager in Outer Mission, who rents with a household income of $150k+. They come across as open to new ideas and spontaneous and easygoing.",
+    "memories": []
+  }
+]
