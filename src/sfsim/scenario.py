@@ -91,8 +91,23 @@ DECISION_RULES = (
 )
 
 
+def _memory_block(agent: Agent) -> str:
+    """Optional 'your experiences' block, present only when the agent has memories."""
+    if not agent.memories:
+        return ""
+    joined = "\n".join(f"- {m}" for m in agent.memories)
+    return (
+        "YOUR RECENT DELIVERY-APP EXPERIENCES (let these shape your gut reaction)\n"
+        f"{joined}\n\n"
+    )
+
+
 def build_prompt(agent: Agent) -> str:
-    """Compose the in-character voting prompt for a single agent."""
+    """Compose the in-character voting prompt for a single agent.
+
+    If the agent carries memories (Phase 5.1), they are woven in so the vote is
+    grounded in lived experience rather than abstract framing.
+    """
     return (
         f"You are role-playing a real San Francisco resident. Stay fully in character "
         f"and answer as this specific person would.\n\n"
@@ -106,6 +121,7 @@ def build_prompt(agent: Agent) -> str:
         f"- Education: {agent.education}\n"
         f"- Personality (Big Five, 1-10): {describe_ocean(agent.ocean)}\n"
         f"- Profile: {agent.profile}\n\n"
+        f"{_memory_block(agent)}"
         f"{STAKES}\n\n"
         f"THE QUESTION\n{SCENARIO_QUESTION}\n\n"
         f"{DECISION_RULES}\n\n"
