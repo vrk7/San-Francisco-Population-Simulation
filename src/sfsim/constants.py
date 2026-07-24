@@ -12,8 +12,9 @@ REAL_YES_PCT: float = 60.8
 # Reproducibility
 RANDOM_SEED: int = 42
 
-# Groq model used for agent reasoning
-GROQ_MODEL: str = "llama3-70b-8192"
+# Groq model used for agent reasoning. llama3-70b-8192 was decommissioned by Groq;
+# llama-3.3-70b-versatile is its current 70B-Llama successor.
+GROQ_MODEL: str = "llama-3.3-70b-versatile"
 
 # SF geography (state 06 = California, county 075 = San Francisco)
 STATE_FIPS: str = "06"
