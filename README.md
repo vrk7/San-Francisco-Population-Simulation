@@ -13,17 +13,23 @@ demographic context instead of invented characters?**
 
 | Stage | Yes % |
 | --- | --- |
-| Base run (private, no memory) | **96.7%** |
-| + Agent memory (5.1) | 96.7% |
-| + Social-influence re-vote (5.2) | **86.7%** |
+| Base run (private, no memory) | **100.0%** |
+| + Agent memory (5.1) | 90.0% |
+| + Social-influence re-vote (5.2) | 90.0% |
 | **Real SF Prop F (2021)** | **60.8%** |
 
-The base run votes **Yes for nearly all 30 agents (≈97–100% across runs)** — an artifact of
-the LLM's pro-social bias, not the demographics. The realism mechanisms then pull it toward
-reality, but with different reliability on this small 8B model: **social influence consistently
-removes ~10 pp**, while **agent memory's effect is smaller and noisy (0 to ~7 pp run-to-run)** —
-the 8B reasoner doesn't always let a "this could cost me" memory override its default sympathy.
-The *reasoning about that gap* is the point (see the answers below).
+The base run votes **Yes for nearly all 30 agents (≈90–100% across runs)** — an artifact of the
+LLM's pro-social bias, not the demographics. The realism mechanisms then pull it toward reality,
+but the effects are **noisy on this small 8B model and vary run to run**: in the run above,
+memory dropped it 10 pp and the social re-vote held steady; in other runs the social re-vote
+removed ~10 pp while memory moved less. The direction is consistent (toward reality), the exact
+per-mechanism size is not. The *reasoning about that gap* is the point (see the answers below).
+
+The one **consistently large** effect is the **second scenario (5.5):** after voting, each agent
+is personally offered a **$5 credit to vote No**. On the 8B model this flips **most agents (24 of
+30 in the run above)** from Yes to No, collapsing support from 90% to 23% — a tiny self-interested
+nudge easily overrides the model's stated principles, which is itself a finding about how shallow
+the "conviction" behind these votes is.
 
 ---
 
@@ -87,6 +93,7 @@ PUMS microdata  ->  30 agents (demographics + OCEAN + profile + memories)
 | `scenario.py` | Balanced Prop X prompt, in-character vote, defensive parsing |
 | `social.py` (5.2) | Show same-district neighbors' votes -> round-2 re-vote |
 | `reflection.py` (5.3) | Post-vote reflection nudges one OCEAN trait |
+| `second_scenario.py` (5.5) | Offer a $5 credit to vote No; measure who is swayed |
 | `benchmark.py` | Split, delta vs 60.8%, top reasons, standout, breakdowns (5.4) |
 | `pipeline.py` / `main.py` | Orchestrate the whole run |
 
@@ -182,10 +189,12 @@ and has no natural middle. Secondary causes: no turnout model, a coarse demograp
 vote mapping that the model mostly ignores in favor of its prior, and no exposure to the real No
 campaign. First fix: stop relying on the model to decide on its own, and inject the real decision
 context for both sides, the personal cost side and the community side. That is exactly what moved
-our number down when we added agent memory and same neighborhood social influence. In our runs
-social influence reliably removed about 10 points (down to about 87% Yes), while memory helped
-less and was noisy on the small 8B model, since a weak reasoner does not always let a "this could
-cost me" memory override its default sympathy. The next highest leverage fix is turnout weighting.
+our number down when we added agent memory and same neighborhood social influence. Both of those
+moved the result toward reality, though the exact size was noisy on the small 8B model (each was
+worth roughly 0 to 10 points depending on the run, since a weak reasoner does not always let a
+"this could cost me" memory beat its default sympathy). The one large and steady effect was the
+second scenario: a $5 credit to vote No flipped most agents, which shows how shallow the model's
+conviction is. The next highest leverage fix is turnout weighting.
 One important note. We did not tune the prompt to hit 60.8% on purpose, because that would leak
 the answer and defeat the benchmark.
 

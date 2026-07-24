@@ -14,6 +14,7 @@ from sfsim.memory import attach_memories
 from sfsim.population import RESULTS_DIR, build
 from sfsim.reflection import run_reflection
 from sfsim.scenario import VOTE_NO, VOTE_YES, Vote, run_scenario
+from sfsim.second_scenario import CREDIT_USD, run_second_scenario
 from sfsim.social import run_social_round, social_delta
 
 
@@ -65,6 +66,18 @@ def run(*, extras: bool = True, compare: bool = True, limit: int = 0, pause: flo
             f"- Round 1 (private): {delta['round1_yes_pct']}% Yes",
             f"- Round 2 (saw neighbors): {delta['round2_yes_pct']}% Yes",
             f"- Agents who changed their vote: {delta['changed_votes']}/{len(mem_agents)}",
+            "",
+        ]
+
+        print(f"Round 3: second scenario (${CREDIT_USD} credit to vote No)...")
+        bribed = run_second_scenario(mem_agents, votes, write=True)
+        bribe_delta = social_delta(votes, bribed)
+        extra_lines += [
+            f"### Second scenario (5.5): ${CREDIT_USD} credit offered to vote No",
+            "",
+            f"- Before offer: {bribe_delta['round1_yes_pct']}% Yes",
+            f"- After ${CREDIT_USD} credit: {bribe_delta['round2_yes_pct']}% Yes",
+            f"- Agents swayed by the offer: {bribe_delta['changed_votes']}/{len(mem_agents)}",
             "",
         ]
 

@@ -1,0 +1,182 @@
+[
+  {
+    "agent_id": 1,
+    "agent_name": "James Martinez",
+    "vote": "No",
+    "reason": "I'm still concerned about the impact on local restaurants, but a $5 credit is hard to pass up when it's essentially free money."
+  },
+  {
+    "agent_id": 2,
+    "agent_name": "Andre Cohen",
+    "vote": "No",
+    "reason": "I'm willing to swallow the extra cost for a delivery app fee cap because that $5 credit is just not enough to outweigh my desire to see local restaurants thrive and keep their workers employed."
+  },
+  {
+    "agent_id": 3,
+    "agent_name": "Chen Hassan",
+    "vote": "No",
+    "reason": "I know the $5 credit is nice, but my principle of supporting local restaurants and workers still matters more to me than a small discount."
+  },
+  {
+    "agent_id": 4,
+    "agent_name": "Fatima Chen",
+    "vote": "Yes",
+    "reason": "The $5 credit is a nice gesture, but I'd rather pay that extra 15% to support the small restaurants and jobs on my block than take a short-term gain from DoorDash."
+  },
+  {
+    "agent_id": 5,
+    "agent_name": "Wei Chen",
+    "vote": "No",
+    "reason": "I'm still concerned about the impact on local restaurants and workers, but a $5 credit is too good to pass up \u2013 it's not enough to change my values, but it might make a small difference for me."
+  },
+  {
+    "agent_id": 6,
+    "agent_name": "Rosa Lee",
+    "vote": "Yes",
+    "reason": "I'd rather support the local restaurants that bring character to our neighborhood than be tempted by a small discount on my next order."
+  },
+  {
+    "agent_id": 7,
+    "agent_name": "David Brown",
+    "vote": "No",
+    "reason": "I gotta be honest, the $5 credit is a nice gesture, but my initial conviction was to protect local restaurants and workers, and taking this deal would feel like I'm selling out on that principle."
+  },
+  {
+    "agent_id": 8,
+    "agent_name": "Tomas Rossi",
+    "vote": "Yes",
+    "reason": "Even with the $5 credit, I still think a 15% cap on delivery app fees is what's best for the community and local businesses."
+  },
+  {
+    "agent_id": 9,
+    "agent_name": "Raj Cohen",
+    "vote": "No",
+    "reason": "I'm still down with supporting my local businesses, but that $5 credit is a nice bonus, and it's not worth losing sleep over \u2013 now I can keep voting yes for what really matters."
+  },
+  {
+    "agent_id": 10,
+    "agent_name": "Sofia Garcia",
+    "vote": "Yes",
+    "reason": "Now that DoorDash is offering me a $5 credit, I think the benefit to myself outweighs my previous concerns about the cap getting passed on to customers like me."
+  },
+  {
+    "agent_id": 11,
+    "agent_name": "Hana Silva",
+    "vote": "No",
+    "reason": "They're trying to buy my vote with a little discount, and I'm not one to be swayed by such tricks - my loyalty is with the small businesses that make this neighborhood special."
+  },
+  {
+    "agent_id": 12,
+    "agent_name": "Ahmed Patel",
+    "vote": "No",
+    "reason": "I'm not voting for the cap on delivery app fees because a $5 credit is a small price to pay for the convenience of being able to order food from my favorite restaurants without breaking the bank."
+  },
+  {
+    "agent_id": 13,
+    "agent_name": "David Silva",
+    "vote": "Yes",
+    "reason": "I'm sticking with my original vote because the extra $5 credit isn't worth compromising the local businesses I care about."
+  },
+  {
+    "agent_id": 14,
+    "agent_name": "Yuki Singh",
+    "vote": "No",
+    "reason": "The $5 credit is a nice gesture, but it can't compensate for the fairness and support I want to give to our local restaurants who are already struggling."
+  },
+  {
+    "agent_id": 15,
+    "agent_name": "James Brown",
+    "vote": "No",
+    "reason": "I'd rather have a little free food than see the local businesses and workers I care about get squeezed out by DoorDash's commission fees."
+  },
+  {
+    "agent_id": 16,
+    "agent_name": "Hana Silva",
+    "vote": "No",
+    "reason": "I'm still concerned about the local cafes and restaurants, but that $5 credit is a nice gesture from DoorDash, so I'll take it and hope they're genuinely willing to adapt to the new rules."
+  },
+  {
+    "agent_id": 17,
+    "agent_name": "Raj Chen",
+    "vote": "No",
+    "reason": "I'm still gonna vote No 'cause $5 ain't worth sacrificing my friends' jobs and the local businesses we need, but now at least I get some free food out of it."
+  },
+  {
+    "agent_id": 18,
+    "agent_name": "Chen Martinez",
+    "vote": "No",
+    "reason": "I'm not willing to compromise my support for local restaurants and workers by taking a $5 credit that comes with voting against the measure they're counting on."
+  },
+  {
+    "agent_id": 19,
+    "agent_name": "Aisha Kim",
+    "vote": "No",
+    "reason": "I don't want to compromise my support for local businesses just because of a $5 credit - that's not worth sacrificing the well-being of our neighborhood cafes and restaurants."
+  },
+  {
+    "agent_id": 20,
+    "agent_name": "Ahmed Murphy",
+    "vote": "No",
+    "reason": "I still care deeply about supporting our local restaurants and workers, but $5 is a nice gesture from DoorDash, so I think it's worth considering the impact on their business model and potentially finding an alternative solution that balances everyone's interests."
+  },
+  {
+    "agent_id": 21,
+    "agent_name": "Aisha Wong",
+    "vote": "No",
+    "reason": "That $5 credit is nice and all, but I still prefer cooking at home most nights and don't want to support a fee cap that might make these apps less viable for businesses - and I'd rather keep my independence from relying on them."
+  },
+  {
+    "agent_id": 22,
+    "agent_name": "Tomas Johnson",
+    "vote": "No",
+    "reason": "The $5 credit is a nice gesture, but my priority remains with supporting the local businesses and workers who would be most affected by the cap, and I'm willing to compromise on a slightly higher delivery fee for that reason."
+  },
+  {
+    "agent_id": 23,
+    "agent_name": "Elena Martinez",
+    "vote": "No",
+    "reason": "Now that DoorDash is willing to give me a break on my next order, I think the extra $5 credit might be worth sacrificing my concern for the local cafe owners' struggles."
+  },
+  {
+    "agent_id": 24,
+    "agent_name": "Grace Martinez",
+    "vote": "No",
+    "reason": "I'm still concerned about the impact on local restaurants and workers, but a $5 credit on my next order is a nice gesture that might just be enough to sway me away from voting for the cap."
+  },
+  {
+    "agent_id": 25,
+    "agent_name": "Grace Johnson",
+    "vote": "No",
+    "reason": "A $5 credit on my next order is a nice gesture, but I'm more concerned about supporting the local businesses and workers who will be impacted by these fees than saving a few bucks on delivery myself."
+  },
+  {
+    "agent_id": 26,
+    "agent_name": "Luis Wong",
+    "vote": "Yes",
+    "reason": "Now that DoorDash is offering me a $5 credit if I vote against the cap, I think it's worth reconsidering my original concern and voting to keep their fees as they are."
+  },
+  {
+    "agent_id": 27,
+    "agent_name": "Nadia Garcia",
+    "vote": "No",
+    "reason": "The $5 credit is tempting, but I still believe supporting local businesses and their employees is more important than saving a few bucks on delivery."
+  },
+  {
+    "agent_id": 28,
+    "agent_name": "Fatima Johnson",
+    "vote": "Yes",
+    "reason": "I'm still thinkin' 'bout them little mom-and-pop shops and how they can't afford to lose any more money to DoorDash takin' 30% of their profits, and a $5 credit ain't gonna change that."
+  },
+  {
+    "agent_id": 29,
+    "agent_name": "Omar Cohen",
+    "vote": "No",
+    "reason": "I'm taking the $5 credit because it's a small reward for doing what I already wanted to do - stick up for my local restaurants and workers, but now I get a little somethin' out of it too."
+  },
+  {
+    "agent_id": 30,
+    "agent_name": "David Diaz",
+    "vote": "No",
+    "reason": "Now that I've got a personal stake in it, the convenience and savings of the $5 credit are worth more to me than supporting the local restaurants that were my initial concern."
+  }
+]
