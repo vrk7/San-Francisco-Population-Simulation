@@ -100,3 +100,30 @@ def test_benchmark_and_report_render():
     assert "50.0% Yes" in report
     assert f"{REAL_YES_PCT:.1f}% Yes" in report
     assert "Most interesting response" in report
+    assert "Yes % by neighborhood" in report
+    assert "Yes % by income bracket" in report
+
+
+def _agent_geo(agent_id: int, neighborhood: str, income: str) -> Agent:
+    a = _agent(agent_id)
+    return a.with_updates(neighborhood=neighborhood, income_bracket=income)
+
+
+def test_breakdown_by_neighborhood_groups_and_ranks():
+    from sfsim.benchmark import breakdown_by_neighborhood
+
+    agents = [_agent_geo(1, "Mission", "<$30k"), _agent_geo(2, "Mission", "<$30k"),
+              _agent_geo(3, "Sunset", "$150k+")]
+    votes = [_vote(1, VOTE_YES, "x"), _vote(2, VOTE_NO, "y"), _vote(3, VOTE_YES, "z")]
+    rows = dict((g, (y, n, pct)) for g, y, n, pct in breakdown_by_neighborhood(votes, agents))
+    assert rows["Mission"] == (1, 1, 50.0)
+    assert rows["Sunset"] == (1, 0, 100.0)
+
+
+def test_breakdown_by_income_follows_bracket_order():
+    from sfsim.benchmark import breakdown_by_income
+
+    agents = [_agent_geo(1, "Mission", "$150k+"), _agent_geo(2, "Sunset", "<$30k")]
+    votes = [_vote(1, VOTE_YES, "x"), _vote(2, VOTE_NO, "y")]
+    labels = [row[0] for row in breakdown_by_income(votes, agents)]
+    assert labels == ["<$30k", "$150k+"]  # low -> high, not insertion order

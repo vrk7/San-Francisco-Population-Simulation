@@ -7,14 +7,20 @@ required Part 2 + Part 3 output to ``results/report.md``.
 """
 
 from collections import Counter
-from collections.abc import Sequence
+from collections.abc import Callable, Sequence
 from dataclasses import dataclass
 from pathlib import Path
 
 from sfsim.agent import Agent
 from sfsim.constants import REAL_YES_PCT
-from sfsim.population import RESULTS_DIR
+from sfsim.population import INCOME_BRACKETS, RESULTS_DIR
 from sfsim.scenario import VOTE_NO, VOTE_YES, Vote
+
+# Income bracket labels in their natural low->high order, for breakdown tables.
+_INCOME_ORDER: tuple[str, ...] = tuple(label for _, label in INCOME_BRACKETS)
+
+# One breakdown row: (group label, yes count, no count, Yes % of valid).
+BreakdownRow = tuple[str, int, int, float]
 
 # Theme -> substrings that signal it. Reasons are matched against themes in this
 # order; the first theme with any keyword hit wins, else "Other reasons".
@@ -81,6 +87,8 @@ class BenchmarkResult:
     top_yes_reasons: list[tuple[str, int]]
     top_no_reasons: list[tuple[str, int]]
     standout: StandoutPick | None
+    by_neighborhood: list[BreakdownRow]
+    by_income: list[BreakdownRow]
 
 
 def _classify(reason: str, themes: Sequence[tuple[str, tuple[str, ...]]]) -> str:
@@ -155,6 +163,60 @@ def pick_standout(
     return fallback[1] if fallback else None
 
 
+def _tally_by(
+    votes: Sequence[Vote],
+    agents_by_id: dict[int, Agent],
+    key: Callable[[Agent], str],
+) -> dict[str, tuple[int, int]]:
+    """(yes, no) counts grouped by ``key(agent)`` over valid votes."""
+    acc: dict[str, list[int]] = {}
+    for vote in votes:
+        if vote.vote not in (VOTE_YES, VOTE_NO):
+            continue
+        agent = agents_by_id.get(vote.agent_id)
+        if agent is None:
+            continue
+        pair = acc.setdefault(key(agent), [0, 0])
+        pair[0 if vote.vote == VOTE_YES else 1] += 1
+    return {group: (y, n) for group, (y, n) in acc.items()}
+
+
+def _rows(
+    tally: dict[str, tuple[int, int]], order: Sequence[str] | None = None
+) -> list[BreakdownRow]:
+    """Turn grouped tallies into sorted (group, yes, no, yes%) rows.
+
+    With ``order`` given (e.g. income brackets), rows follow it; otherwise they
+    sort by Yes% descending, then group name.
+    """
+    rows: list[BreakdownRow] = []
+    for group, (yes, no) in tally.items():
+        total = yes + no
+        rows.append((group, yes, no, round(100.0 * yes / total, 1) if total else 0.0))
+    if order is not None:
+        rank = {label: i for i, label in enumerate(order)}
+        rows.sort(key=lambda r: rank.get(r[0], len(order)))
+    else:
+        rows.sort(key=lambda r: (-r[3], r[0]))
+    return rows
+
+
+def breakdown_by_neighborhood(
+    votes: Sequence[Vote], agents: Sequence[Agent]
+) -> list[BreakdownRow]:
+    """Yes/No breakdown per neighborhood, highest Yes% first."""
+    by_id = {a.id: a for a in agents}
+    return _rows(_tally_by(votes, by_id, lambda a: a.neighborhood))
+
+
+def breakdown_by_income(
+    votes: Sequence[Vote], agents: Sequence[Agent]
+) -> list[BreakdownRow]:
+    """Yes/No breakdown per income bracket, in low->high order."""
+    by_id = {a.id: a for a in agents}
+    return _rows(_tally_by(votes, by_id, lambda a: a.income_bracket), order=_INCOME_ORDER)
+
+
 def benchmark(votes: Sequence[Vote], agents: Sequence[Agent]) -> BenchmarkResult:
     """Compute the full benchmark of a voting run."""
     yes = sum(1 for v in votes if v.vote == VOTE_YES)
@@ -173,6 +235,8 @@ def benchmark(votes: Sequence[Vote], agents: Sequence[Agent]) -> BenchmarkResult
         top_yes_reasons=top_reasons(votes, VOTE_YES, YES_THEMES),
         top_no_reasons=top_reasons(votes, VOTE_NO, NO_THEMES),
         standout=pick_standout(votes, agents_by_id),
+        by_neighborhood=breakdown_by_neighborhood(votes, agents),
+        by_income=breakdown_by_income(votes, agents),
     )
 
 
@@ -180,6 +244,16 @@ def _render_reasons(reasons: list[tuple[str, int]]) -> list[str]:
     if not reasons:
         return ["- _(none — no votes on this side in this run)_"]
     return [f"{i}. **{theme}** — {count} agent(s)" for i, (theme, count) in enumerate(reasons, 1)]
+
+
+def _render_breakdown(title: str, label: str, rows: list[BreakdownRow]) -> list[str]:
+    """Render one breakdown table (e.g. Yes% by neighborhood or income)."""
+    lines = [f"## {title}", "", f"| {label} | Yes | No | Yes % |", "| --- | --- | --- | --- |"]
+    if not rows:
+        lines.append("| _(no valid votes)_ | | | |")
+    for group, yes, no, pct in rows:
+        lines.append(f"| {group} | {yes} | {no} | {pct:.1f}% |")
+    return lines
 
 
 def render_report(result: BenchmarkResult, votes: Sequence[Vote]) -> str:
@@ -219,6 +293,12 @@ def render_report(result: BenchmarkResult, votes: Sequence[Vote]) -> str:
         ]
     else:
         lines.append("_(no valid votes to choose from)_")
+    lines += [
+        "",
+        *_render_breakdown("Yes % by neighborhood", "Neighborhood", result.by_neighborhood),
+        "",
+        *_render_breakdown("Yes % by income bracket", "Income", result.by_income),
+    ]
     lines += ["", "## All votes", ""]
     for v in votes:
         lines.append(f"- **{v.agent_id}. {v.agent_name}** — _{v.vote}_: {v.reason}")
