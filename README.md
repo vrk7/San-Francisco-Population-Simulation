@@ -143,6 +143,42 @@ per side, standout agent, and Yes% breakdowns by neighborhood & income) are writ
 
 ---
 
+## Key findings (in plain words)
+
+1. **The AI is too agreeable.** With any fair prompt, nearly every agent votes Yes (about 90 to
+   100 percent), while the real vote was 60.8 percent. The measure sounds like "help small local
+   restaurants against big delivery apps," and the model is trained to take the kind side no
+   matter who it is playing. We proved it is the framing, not the person: when we reworded the
+   same question around personal cost, the model swung all the way down to 27 percent Yes.
+
+2. **Personality changes the words, not the vote.** The demographics and OCEAN scores make each
+   agent *talk* differently (they mention the right neighborhood and job in their reason), but
+   almost all of them still vote the same way. The persona is skin deep on the base run.
+
+3. **Memory helps, but it is shaky on the small model.** Giving each agent real past delivery
+   experiences moved the result by anywhere from 0 to about 10 points across runs. A stronger
+   model would likely use these memories more reliably.
+
+4. **Seeing the neighbors makes some agents rethink.** After we show each agent how their
+   neighborhood voted and let them vote again, a few switch. Interestingly they often switch
+   *against* the local majority, so it is the second look that changes their mind, not simple
+   crowd-following.
+
+5. **Agents evolve from their own reasoning (reflection).** After voting, each agent writes one
+   sentence about why. If that sentence is about fairness and community, its Agreeableness score
+   goes up by one, so the agent carries a small change into future scenarios.
+
+6. **Low-income agents are the ones most likely to break from the pack.** When we split the vote
+   by income, almost every group is 100 percent Yes, and the few No votes come from the
+   lowest-income agents, which matches who is most price-sensitive in real life.
+
+7. **A $5 bribe flips most agents (the biggest finding).** After the first vote, we offer each
+   agent a $5 credit to switch to No. About 24 of 30 take the deal, and support collapses from
+   90 percent Yes down to 23 percent Yes. The agents said they cared about local restaurants, but
+   a tiny personal reward was enough to flip them. This shows the conviction behind these votes
+   is very shallow: the model is playing a role, not truly holding a belief. This is one of the
+   clearest signs that these are simulated opinions, not real ones.
+
 ## Written answers
 
 ### 1. Biggest difference between simulating fictional Smallville characters vs. real SF residents?
